@@ -1,6 +1,6 @@
 # Hi there, I'm Hiruni Sandamini 👋
 
-I am an undergraduate pursuing a **BSc (Hons) in Statistics** at the Faculty of Applied Sciences, **University of Sri Jayewardenepura**, Sri Lanka . Driven by a passion for data and quantitative reasoning, I focus on extracting meaningful patterns from complex datasets to support data-driven decision-making. My academic background combines rigorous statistical theory with applied analytics, preparing me to tackle real-world challenges through predictive modeling, data visualization, and structured problem-solving.
+I am an undergraduate pursuing a **BSc (Hons) in Statistics** at the Faculty of Applied Sciences, **University of Sri Jayewardenepura**, Sri Lanka. Driven by a passion for data and quantitative reasoning, I focus on extracting meaningful patterns from complex datasets to support data-driven decision-making. My academic background combines rigorous statistical theory with applied analytics, preparing me to tackle real-world challenges through predictive modeling, data visualization, and structured problem-solving.
 
 ---
 

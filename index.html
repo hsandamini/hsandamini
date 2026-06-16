@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiruni Sandamini | Portfolio</title>
+    <style>
+        :root {
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --sidebar-color: #0f172a;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --accent: #0284c7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            display: flex;
+            min-height: 100vh;
+        }
+        /* Sidebar Navigation Layout */
+        .sidebar {
+            width: 280px;
+            background-color: var(--sidebar-color);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .profile-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .sidebar h1 { font-size: 1.4rem; margin: 0 0 0.3rem; }
+        .sidebar p { font-size: 0.85rem; opacity: 0.7; margin: 0; }
+        
+        /* Navigation Links mirroring Google Sites */
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            display: block;
+            transition: 0.2s ease;
+        }
+        .nav-links a:hover {
+            background-color: #1e293b;
+            color: white;
+        }
+
+        /* Main Content Panel Layout */
+        .main-content {
+            margin-left: 280px;
+            padding: 3rem;
+            max-width: 850px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        section {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            scroll-margin-top: 2rem;
+        }
+        h2 { 
+            color: var(--sidebar-color); 
+            font-size: 1.6rem; 
+            margin-top: 0; 
+            border-bottom: 2px solid #f1f5f9; 
+            padding-bottom: 0.5rem; 
+        }
+        .item-card { 
+            border-left: 4px solid var(--accent); 
+            padding-left: 1rem; 
+            margin-bottom: 1.5rem; 
+        }
+        .item-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; color: var(--sidebar-color); }
+        .placeholder-text {
+            color: var(--text-light);
+            font-style: italic;
+            background-color: #f1f5f9;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px dashed #cbd5e1;
+        }
+
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; padding: 2rem 1.5rem; }
+            .main-content { margin-left: 0; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Navigation Sidebar -->
+    <div class="sidebar">
+        <div class="profile-area">
+            <img src="https://github.com" alt="Hiruni Sandamini" class="profile-img">
+            <h1>Hiruni Sandamini</h1>
+            <p>B.Sc. (Hons) Statistics Undergraduate</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Right Side Content Area Panels -->
+    <div class="main-content">
+        
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a final-year undergraduate pursuing a Bachelor of Science (Honours) in Statistics at the Faculty of Applied Sciences, University of Sri Jayewardenepura. I have a strong interest in data analysis, research, and data-driven decision-making. I have hands-on experience using statistical and analytical tools such as R, Excel, and SPSS to analyze data, interpret results, and present insights through reports and visualizations.</p>
+            <p>This website serves as a professional portfolio presenting my academic background, skills, and projects.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item-card">
+                <h3>B.Sc. (Honours) in Statistics</h3>
+                <p style="margin: 0; color: var(--text-light);">Faculty of Applied Sciences, University of Sri Jayewardenepura (Final Year)</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="placeholder-text">
+                Click "Edit file" on GitHub to add your industry training or internship details here to mirror your sub-pages.
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="placeholder-text">
+                Click "Edit file" on GitHub to list your university statistical analysis projects, data tasks, or case studies here.
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="placeholder-text">
+                Click "Edit file" on GitHub to showcase your external certifications, technical qualifications, or course completions here.
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="placeholder-text">
+                Click "Edit file" on GitHub to highlight your university, academic, or personal milestones here.
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for professional inquiries or collaborations:</p>
+            <p><strong>Email:</strong> <a href="mailto:herathliyanagedhs@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: bold;">herathliyanagedhs@gmail.com</a></p>
+        </section>
+
+    </div>
+
+</body>
+</html>

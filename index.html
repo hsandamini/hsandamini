@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiruni Sandamini | Portfolio</title>
     <style>
@@ -40,14 +39,22 @@
             text-align: center;
             margin-bottom: 2rem;
         }
-        .profile-img {
-            width: 130px;
-            height: 130px;
+        /* Elegant Initials Circle Avatar to replace the broken photo link */
+        .profile-avatar-badge {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 4px solid var(--accent);
-            object-fit: cover;
-            margin-bottom: 1rem;
-            background: #fff;
+            background: linear-gradient(135deg, var(--accent), #0369a1);
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+            border: 3px solid rgba(255,255,255,0.1);
         }
         .sidebar h1 { font-size: 1.5rem; margin: 0 0 0.4rem; }
         .sidebar p { font-size: 0.85rem; opacity: 0.75; margin: 0; line-height: 1.4; }
@@ -81,8 +88,7 @@
         }
         .contact-info p { margin: 0.5rem 0; }
         .contact-info a { color: var(--accent); text-decoration: none; font-weight: bold; }
-
-        /* Main Content Layout Styles */
+        /* Main Dashboard Layout Styles */
         .main-content {
             margin-left: 300px;
             padding: 3rem;
@@ -118,7 +124,7 @@
         ul { padding-left: 1.2rem; margin: 0.5rem 0 0; color: var(--text-light); }
         li { margin-bottom: 0.4rem; font-size: 0.95rem; }
         
-        /* Logo Layout Configurations */
+        /* Premium Text Badge Placeholders instead of broken images */
         .edu-item, .exp-item {
             display: flex;
             align-items: flex-start;
@@ -128,19 +134,21 @@
             border-bottom: 1px solid #f1f5f9;
         }
         .edu-item:last-child, .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .edu-logo, .exp-logo {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 4px;
-            background: #f1f5f9;
+        
+        .badge-logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.8rem;
-            font-weight: bold;
-            color: #64748b;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
+        
         .edu-details, .exp-details { flex: 1; }
         .edu-details h3, .exp-details h3 { margin: 0 0 0.2rem 0; font-size: 1.2rem; color: var(--sidebar-color); }
         .edu-details p, .exp-details p { margin: 0.2rem 0; color: var(--text-dark); font-weight: 500; }
@@ -171,7 +179,8 @@
     <!-- Left Navigation Sidebar Panel -->
     <div class="sidebar">
         <div class="profile-area">
-            <img src="https://github.com" alt="Hiruni Sandamini" class="profile-img">
+            <!-- Custom Initials Badge -->
+            <div class="profile-avatar-badge">HS</div>
             <h1>Hiruni Sandamini</h1>
             <p>B.Sc. (Hons) Statistics Undergraduate<br>University of Sri Jayewardenepura</p>
         </div>
@@ -183,7 +192,6 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="contact-info">
             <p>📍 Location: Sri Lanka</p>
@@ -191,7 +199,7 @@
         </div>
     </div>
 
-    <!-- Right Side Main Content Panels -->
+    <!-- Right Side Main Content Panel Dashboard -->
     <div class="main-content">
         
         <section id="about">
@@ -199,12 +207,11 @@
             <p>I am a final-year undergraduate pursuing a Bachelor of Science (Honours) in Statistics at the Faculty of Applied Sciences, University of Sri Jayewardenepura. I possess a deep interest in data curation, academic research, and analytical problem-solving. My academic background integrates foundational probability and statistical methodologies with practical computational tools, preparing me to transform raw complex datasets into structured business summaries, reports, and insights.</p>
         </section>
 
-        <!-- Education Section Panel with Bulletproof Fallbacks -->
+        <!-- Education Section Panel with Fixed Badges -->
         <section id="education">
             <h2>Education</h2>
             <div class="edu-item">
-                <img src="https://wikimedia.org" alt="USJ" class="edu-logo" onerror="this.style.display='none'; document.getElementById('usj-fallback').style.display='flex';">
-                <div id="usj-fallback" class="edu-logo" style="display:none; background:#800000; color:#fff;">USJ</div>
+                <div class="badge-logo" style="background-color: #7f1d1d;">USJ</div>
                 <div class="edu-details">
                     <h3>University of Sri Jayewardenepura</h3>
                     <p>Bachelor of Science (Honours) in Statistics</p>
@@ -212,7 +219,7 @@
                 </div>
             </div>
             <div class="edu-item">
-                <div class="edu-logo" style="background:#0f172a; color:#ffffff; font-size:1rem;">LC</div>
+                <div class="badge-logo" style="background-color: #1e3a8a;">LC</div>
                 <div class="edu-details">
                     <h3>Loyola College, Daluwakotuwa, Negombo</h3>
                     <p>Completed G.C.E. Advanced Level (Physical Science)</p>
@@ -248,7 +255,7 @@
         <section id="experience">
             <h2>Experience</h2>
             <div class="exp-item">
-                <div class="exp-logo" style="background:#ffa500; color:#ffffff; font-size:1rem;">T2</div>
+                <div class="badge-logo" style="background-color: #ea580c;">T2</div>
                 <div class="exp-details">
                     <h3>Transfer Operations & Booking Coordinator</h3>
                     <p>T2 Transfer, Paris, France (Remote)</p>

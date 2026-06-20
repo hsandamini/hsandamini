@@ -13,11 +13,8 @@ I am an undergraduate pursuing a **BSc (Hons) in Statistics** at the Faculty of 
 - **BSc (Hons) in Statistics** 
   *Faculty of Applied Sciences, University of Sri Jayewardenepura* (Ongoing)
 
-### 🚀 Academic & Personal Projects
-*Coming soon! I will be uploading my university practical assignments and data analysis projects here.*
-
 ---
 
 ### 📫 Let's Connect!
 - ✉️ **Email:** herathliyanagedhs@gmail.com
-- 🌐 **Personal Website:** *Coming soon via Netlify!*
+

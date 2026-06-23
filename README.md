@@ -16,5 +16,5 @@ I am an undergraduate pursuing a **BSc (Hons) in Statistics** at the Faculty of 
 ---
 
 ### 📫 Let's Connect!
-- ✉️ **Email:** herathliyanagedhs@gmail.com
+- ✉️ **Email:** herathliyanagehs@gmail.com
 

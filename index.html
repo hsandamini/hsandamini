@@ -22,7 +22,6 @@
             display: flex;
             min-height: 100vh;
         }
-        /* Sidebar Layout Styles */
         .sidebar {
             width: 300px;
             background-color: var(--sidebar-color);
@@ -39,7 +38,6 @@
             text-align: center;
             margin-bottom: 2rem;
         }
-        /* Clean Profile Avatar Style linked directly to your uploaded photo */
         .profile-avatar {
             width: 110px;
             height: 110px;
@@ -48,6 +46,7 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
             border: 3px solid rgba(255,255,255,0.2);
+            display: inline-block;
         }
         .sidebar h1 { font-size: 1.5rem; margin: 0 0 0.4rem; }
         .sidebar p { font-size: 0.85rem; opacity: 0.75; margin: 0; line-height: 1.4; }
@@ -82,7 +81,6 @@
         .contact-info p { margin: 0.5rem 0; }
         .contact-info a { color: var(--accent); text-decoration: none; font-weight: bold; }
         
-        /* Main Content Layout Styles */
         .main-content {
             margin-left: 300px;
             padding: 3rem;
@@ -153,12 +151,10 @@
         }
     </style>
 </head>
-    <body>
+<body>
 
-    <!-- Left Navigation Sidebar Panel -->
     <div class="sidebar">
         <div class="profile-area">
-            <!-- This correctly connects your uploaded file now -->
             <img class="profile-avatar" src="profile.jpg" alt="Hiruni Sandamini">
             <h1>Hiruni Sandamini</h1>
             <p>B.Sc. (Hons) Statistics Undergraduate<br>University of Sri Jayewardenepura</p>
@@ -178,7 +174,6 @@
         </div>
     </div>
 
-    <!-- Right Side Main Content Panel Dashboard -->
     <div class="main-content">
         
         <section id="about">
@@ -308,4 +303,3 @@
 
 </body>
 </html>
-

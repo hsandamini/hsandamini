@@ -22,7 +22,6 @@
             display: flex;
             min-height: 100vh;
         }
-        /* Sidebar Layout Styles */
         .sidebar {
             width: 300px;
             background-color: var(--sidebar-color);
@@ -39,22 +38,14 @@
             text-align: center;
             margin-bottom: 2rem;
         }
-        /* Elegant Initials Circle Avatar to replace the broken photo link */
-        .profile-avatar-badge {
+        .profile-avatar {
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), #0369a1);
-            color: white;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
+            object-fit: cover;
             margin-bottom: 1.5rem;
             box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
-            border: 3px solid rgba(255,255,255,0.1);
+            border: 3px solid rgba(255,255,255,0.2);
         }
         .sidebar h1 { font-size: 1.5rem; margin: 0 0 0.4rem; }
         .sidebar p { font-size: 0.85rem; opacity: 0.75; margin: 0; line-height: 1.4; }
@@ -88,7 +79,7 @@
         }
         .contact-info p { margin: 0.5rem 0; }
         .contact-info a { color: var(--accent); text-decoration: none; font-weight: bold; }
-        /* Main Dashboard Layout Styles */
+        
         .main-content {
             margin-left: 300px;
             padding: 3rem;
@@ -124,7 +115,6 @@
         ul { padding-left: 1.2rem; margin: 0.5rem 0 0; color: var(--text-light); }
         li { margin-bottom: 0.4rem; font-size: 0.95rem; }
         
-        /* Premium Text Badge Placeholders instead of broken images */
         .edu-item, .exp-item {
             display: flex;
             align-items: flex-start;
@@ -148,23 +138,9 @@
             flex-shrink: 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        
         .edu-details, .exp-details { flex: 1; }
         .edu-details h3, .exp-details h3 { margin: 0 0 0.2rem 0; font-size: 1.2rem; color: var(--sidebar-color); }
         .edu-details p, .exp-details p { margin: 0.2rem 0; color: var(--text-dark); font-weight: 500; }
-        
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-top: 0.75rem;
-            transition: color 0.2s ease;
-        }
-        .project-link:hover { color: var(--sidebar-color); }
 
         @media (max-width: 768px) {
             body { flex-direction: column; }
@@ -179,8 +155,7 @@
     <!-- Left Navigation Sidebar Panel -->
     <div class="sidebar">
         <div class="profile-area">
-            <!-- Custom Initials Badge -->
-            <div class="profile-avatar-badge">HS</div>
+            <img class="profile-avatar" src="profile.jpg" alt="Hiruni Sandamini">
             <h1>Hiruni Sandamini</h1>
             <p>B.Sc. (Hons) Statistics Undergraduate<br>University of Sri Jayewardenepura</p>
         </div>
@@ -194,7 +169,7 @@
             <li><a href="#achievements">Achievements</a></li>
         </ul>
         <div class="contact-info">
-            <p>📍 Location: Sri Lanka</p>
+            <p>📍 Location: Ja-Ela, Sri Lanka</p>
             <p>✉️ Email: <a href="mailto:herathliyanagehs@gmail.com">herathliyanagehs@gmail.com</a></p>
         </div>
     </div>
@@ -204,150 +179,125 @@
         
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a final-year undergraduate pursuing a Bachelor of Science (Honours) in Statistics at the Faculty of Applied Sciences, University of Sri Jayewardenepura. I possess a deep interest in data curation, academic research, and analytical problem-solving. My academic background integrates foundational probability and statistical methodologies with practical computational tools, preparing me to transform raw complex datasets into structured business summaries, reports, and insights.</p>
+            <p>I am an undergraduate pursuing a Bachelor of Science (Honours) in Statistics at the Faculty of Applied Sciences, University of Sri Jayewardenepura, maintaining a CGPA of 3.36/4.00. I possess a deep interest in data modeling, environmental data analysis, and climate forecasting. My academic background integrates advanced time series analysis and probability theory, preparing me to transform complex environmental and meteorological datasets into actionable statistical insights, predictive models, and structured reports.</p>
         </section>
 
-        <!-- Education Section Panel with Fixed Badges -->
         <section id="education">
             <h2>Education</h2>
             <div class="edu-item">
                 <div class="badge-logo" style="background-color: #7f1d1d;">USJ</div>
                 <div class="edu-details">
                     <h3>University of Sri Jayewardenepura</h3>
-                    <p>Bachelor of Science (Honours) in Statistics</p>
-                    <div class="timeline">2023 - Present</div>
-                </div>
-            </div>
-            <div class="edu-item">
-                <div class="badge-logo" style="background-color: #1e3a8a;">LC</div>
-                <div class="edu-details">
-                    <h3>Loyola College, Daluwakotuwa, Negombo</h3>
-                    <p>Completed G.C.E. Advanced Level (Physical Science)</p>
-                    <div class="timeline">2019 - 2022</div>
+                    <p>B.Sc. (Honours) in Statistics (Reading)</p>
+                    <p style="color: var(--accent); font-weight: 600;">CGPA: 3.36 / 4.00</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.4rem;">Department of Statistics | May 2023 - Present</p>
                 </div>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Technical & Analytical Skills</h2>
+            <h2>Skills</h2>
             <div class="grid">
-                <div>
-                    <h3 style="font-size: 1.1rem; color: var(--sidebar-color); margin-top: 0;">Mathematical Frameworks</h3>
-                    <ul>
-                        <li>Statistical Modeling & Estimation</li>
-                        <li>Regression Analysis & ANOVA</li>
-                        <li>Probability Theory & Inference Testing</li>
-                        <li>Exploratory Data Collection</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 style="font-size: 1.1rem; color: var(--sidebar-color); margin-top: 0;">Software Ecosystem</h3>
+                <div class="item-card">
+                    <h3>Programming & Ecosystems</h3>
                     <ul>
                         <li>R Programming Language</li>
-                        <li>IBM SPSS Statistical Platform</li>
-                        <li>Microsoft Excel Advanced Functions</li>
-                        <li>Minitab Computational Modeler</li>
+                        <li>R Packages (tidyverse, forecast, shiny, caret, readr)</li>
+                        <li>C Programming</li>
+                        <li>LaTeX typesetting</li>
+                    </ul>
+                </div>
+                <div class="item-card">
+                    <h3>Software & Diagnostics</h3>
+                    <ul>
+                        <li>Minitab</li>
+                        <li>Maple</li>
+                        <li>Microsoft Office suite</li>
+                        <li>Data Dashboards (ggplot2, plotly, flexdashboard)</li>
+                    </ul>
+                </div>
+                <div class="item-card">
+                    <h3>Core Statistical Coursework</h3>
+                    <ul>
+                        <li>Time Series Analysis & Forecasting</li>
+                        <li>Stochastic Processes & Modeling</li>
+                        <li>Multivariate Statistical Methods</li>
+                        <li>Regression Analysis & GLMs</li>
+                    </ul>
+                </div>
+                <div class="item-card">
+                    <h3>Mathematical Frameworks</h3>
+                    <ul>
+                        <li>Differential Equations</li>
+                        <li>Numerical Methods</li>
+                        <li>Probability Theory & Inference</li>
+                        <li>Linear Algebra</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="exp-item">
+                <div class="badge-logo" style="background-color: #0284c7;">T2</div>
+                <div class="exp-details">
+                    <h3>Transfer Operations & Booking Coordinator</h3>
+                    <p style="font-weight: 600; color: var(--text-light);">T2 Transfer, Paris, France (Remote)</p>
+                    <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600;">December 2022 - April 2023</p>
+                    <ul>
+                        <li>Managed airport transfer bookings and confirmed reservations via email while maintaining operational shift schedules.</li>
+                        <li>Monitored live flight updates and dynamically communicated changes to ensure coordination between international clients and logistics teams.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="exp-item">
-                <div class="badge-logo" style="background-color: #ea580c;">T2</div>
-                <div class="exp-details">
-                    <h3>Transfer Operations & Booking Coordinator</h3>
-                    <p>T2 Transfer, Paris, France (Remote)</p>
-                    <div class="timeline">Dec 2022 – Apr 2023</div>
-                    <ul>
-                        <li>Managed airport transfer bookings and confirmed reservations via email.</li>
-                        <li>Prepared and updated daily transfer schedules.</li>
-                        <li>Monitored flight statuses and communicated delays or changes to the operations team.</li>
-                        <li>Maintained transfer lists to ensure smooth daily operations.</li>
-                        <li>Supported coordination between customers, drivers, and the operations team.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <section id="projects">
             <h2>Projects</h2>
+            
+            <div class="item-card">
+                <h3>Mini Project: Applications of Bivariate Distribution & Order Statistics</h3>
+                <div class="timeline">Academic Study & Review</div>
+                <p style="color: var(--text-dark); font-size: 0.95rem; margin: 0.5rem 0;">Conducted a comprehensive research-based review on bivariate distributions and order statistics configurations. Investigated specialized applications focused on <strong>rainfall–temperature modeling and extreme weather risk analysis</strong> using Generalized Extreme Value (GEV) distributions.</p>
+            </div>
+
             <div class="item-card">
                 <h3>New Zealand Health & Demographics Dashboard</h3>
-                <p style="color: var(--text-light); margin: 0;">Developed an interactive dashboard using R Shiny to analyze health, epidemiology, and demographic trends in New Zealand. The dashboard allows users to explore key patterns and insights to support data-driven decision-making in public health and population studies.</p>
-                <a href="#" class="project-link" target="_blank">🔗 View Dashboard</a>
+                <div class="timeline">March 2026</div>
+                <p style="color: var(--text-dark); font-size: 0.95rem; margin: 0.5rem 0;">Developed an interactive data dashboard using R Shiny to analyze health, epidemiology, and demographic trends in New Zealand. Created structured visualizations for population trends, fertility rates, mortality weights, and key national healthcare markers.</p>
             </div>
 
             <div class="item-card">
                 <h3>QA & Performance Dashboard</h3>
-                <p style="color: var(--text-light); margin: 0;">Developed an interactive R Shiny dashboard to analyze Quality Assurance (QA) metrics and process performance trends. This dashboard enables users to monitor key performance indicators, assess process variation, and support data-driven improvements in operational processes.</p>
-                <a href="#" class="project-link" target="_blank">🔗 View Dashboard</a>
+                <div class="timeline">January 2026</div>
+                <p style="color: var(--text-dark); font-size: 0.95rem; margin: 0.5rem 0;">Built an automated tracking dashboard via R Shiny to monitor operational QA metrics and control charts. Implemented responsive statistical processing charts (X-bar and R charts) to evaluate trend variations and process stability.</p>
             </div>
 
             <div class="item-card">
                 <h3>Analysis of Factors Impacting Export Performance in Sri Lanka</h3>
-                <div class="timeline">Group Research Project (Unpublished)</div>
-                <p style="color: var(--text-light); margin: 0;">This unpublished group research project examines the factors influencing Sri Lanka's export performance using monthly data from 2007 to 2024. The study applies multiple linear regression to analyze the effects of imports, exchange rate, and crude oil prices on export growth.</p>
-                <a href="#" class="project-link" target="_blank">📄 View Research Report</a>
-            </div>
-
-            <div class="item-card">
-                <h3>Mini Project: Applications of Bivariate Distribution & Order Statistics</h3>
-                <div class="timeline">Coursework: STA 3182 – Advanced Distribution Theory | USJ</div>
-                <p style="color: var(--text-light); margin: 0;">This mini project was completed as part of the advanced curriculum at the University of Sri Jayewardenepura. It is based on the review and synthesis of published journal articles on bivariate distributions and order statistics, examining their applications in extreme value analysis using GEV distributions.</p>
-                <a href="#" class="project-link" target="_blank">📄 View Full Report</a>
+                <div class="timeline">October 2025</div>
+                <p style="color: var(--text-dark); font-size: 0.95rem; margin: 0.5rem 0;">Collaborative group research project analyzing monthly trade data spanning 2007–2024. Applied multiple linear regression frameworks to evaluate the predictive impact of import values, currency exchange shifts, and global crude oil prices on national export growth.</p>
             </div>
         </section>
 
         <section id="certifications">
             <h2>Certifications</h2>
             <div class="item-card">
-                <h3>Certificate of Completion – C Programming for Beginners</h3>
-                <div class="timeline">Great Learning Academy | Issued: June 2023</div>
-                <p style="color: var(--text-light); margin: 0;">Developed a foundational understanding of data structures, procedural logic frameworks, and algorithm design principles using the C language ecosystem.</p>
-                <a href="#" class="project-link" target="_blank">🔗 View Certificate</a>
+                <h3>C Programming for Beginners</h3>
+                <div class="timeline">Great Learning Academy | June 2023</div>
             </div>
             <div class="item-card">
-                <h3>Certificate in English – Intermediate Level</h3>
-                <div class="timeline">BCI Campus, Negombo | Issued: July 2022</div>
-                <p style="color: var(--text-light); margin: 0;">Validated professional communication protocols, advanced grammar applications, and workplace presentation competencies.</p>
-                <a href="#" class="project-link" target="_blank">🔗 View Certificate</a>
+                <h3>Certificate in English (Intermediate Level)</h3>
+                <div class="timeline">BCI Campus, Negombo | July 2022</div>
             </div>
         </section>
 
         <section id="achievements">
             <h2>Achievements</h2>
             <div class="item-card">
-                <h3>Champion – Inter-Unit Carol Competition</h3>
-                <div class="timeline">Vox Nathalista Carol Service & Competition, SLUCSM – Colombo Region | 2023</div>
-                <p style="color: var(--text-light); margin: 0;">Recognized as the regional competition champion, demonstrating excellence in group collaboration, synchronized team coordination, and dedicated performance discipline.</p>
-                <a href="#" class="project-link" target="_blank">🔗 View Certificate</a>
+                <h3>Champion - Inter-Unit Carol Competition</h3>
+                <div class="timeline">Vox Nathalista Team Event | 2023</div>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div style="background-color: #f8fafc; padding: 1.2rem; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 2rem;">
-                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">✉️ Direct Email Address:</p>
-                <a href="mailto:herathliyanagedhs@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: 700; font-size: 1.1rem;">herathliyanagehs@gmail.com</a>
-            </div>
-            <form name="portfolio-contact" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 1rem;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                    <div>
-                        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem;">Your Name</label>
-                        <input type="text" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;">
-                    </div>
-                    <div>
-                        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem;">Your Email</label>
-                        <input type="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;">
-                    </div>
-                </div>
-                <div>
-                    <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem;">Message</label>
-                    <textarea name="message" rows="4" required style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"></textarea>
-                </div>
-                <button type="submit" style="background-color: var(--accent); color: white; border: none; padding: 0.8rem 1.5rem; font-size: 0.95rem; font-weight: 600; border-radius: 6px; cursor: pointer; align-self: flex-start;">✉️ Send Message</button>
-            </form>
         </section>
 
     </div>

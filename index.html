@@ -8,109 +8,105 @@
         :root {
             --bg-main: #f1f5f9;
             --bg-card: #ffffff;
-            --sidebar-color: #0f172a;
+            --nav-color: #0f172a;
             --text-dark: #1e293b;
             --text-light: #64748b;
             --accent: #0284c7;
         }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--bg-main);
             color: var(--text-dark);
-            display: flex;
-            min-height: 100vh;
         }
-        .sidebar {
-            width: 300px;
-            background-color: var(--sidebar-color);
+
+        .navbar {
+            background-color: var(--nav-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.9rem 2.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            flex-wrap: wrap;
+        }
+        .navbar .brand {
             color: white;
-            padding: 3rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            height: 100vh;
-            box-sizing: border-box;
-            overflow-y: auto;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
-        .profile-area {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .profile-avatar {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
-            border: 3px solid rgba(255,255,255,0.2);
-            display: inline-block;
-        }
-        .sidebar h1 { font-size: 1.5rem; margin: 0 0 0.4rem; }
-        .sidebar p { font-size: 0.85rem; opacity: 0.75; margin: 0; line-height: 1.4; }
-        
         .nav-links {
             list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
             display: flex;
-            flex-direction: column;
-            gap: 0.4rem;
+            gap: 0.3rem;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
         }
         .nav-links button {
             color: #cbd5e1;
             background: none;
             border: none;
-            text-align: left;
-            text-decoration: none;
-            font-size: 0.95rem;
-            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            padding: 0.5rem 0.9rem;
             border-radius: 6px;
-            display: block;
-            width: 100%;
             cursor: pointer;
             font-family: inherit;
             transition: 0.2s ease;
         }
-        .nav-links button:hover {
-            background-color: #1e293b;
+        .nav-links button:hover { background-color: #1e293b; color: white; }
+        .nav-links button.active { background-color: var(--accent); color: white; }
+
+        .hero {
+            background-color: var(--nav-color);
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 1.5rem 4rem;
         }
-        .nav-links button.active {
-            background-color: var(--accent);
-            color: white;
+        .profile-avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+            border: 3px solid rgba(255,255,255,0.2);
+            margin-bottom: 1.2rem;
         }
-        .contact-info { 
-            margin-top: auto;
-            font-size: 0.85rem; 
-            border-top: 1px solid #334155; 
-            padding-top: 1.5rem; 
+        .hero h1 { margin: 0 0 0.4rem; font-size: 1.9rem; }
+        .hero p.tagline { margin: 0; opacity: 0.8; font-size: 1rem; max-width: 500px; }
+        .hero .contact-row {
+            margin-top: 1.3rem;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        .contact-info p { margin: 0.5rem 0; }
-        .contact-info a { color: var(--accent); text-decoration: none; font-weight: bold; }
-        
+        .hero .contact-row a { color: #7dd3fc; text-decoration: none; font-weight: 600; }
+
         .main-content {
-            margin-left: 300px;
-            padding: 3rem;
-            max-width: 850px;
-            width: 100%;
-            box-sizing: border-box;
+            max-width: 900px;
+            margin: -2.5rem auto 3rem;
+            padding: 0 1.5rem;
         }
         section {
             background-color: var(--bg-card);
             padding: 2.5rem;
             border-radius: 12px;
             margin-bottom: 2.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
-            scroll-margin-top: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.06);
         }
         .tab-section { display: none; }
         .tab-section.active { display: block; }
 
         h2 { 
-            color: var(--sidebar-color); 
+            color: var(--nav-color); 
             font-size: 1.5rem; 
             margin-top: 0; 
             border-bottom: 2px solid #f1f5f9; 
@@ -124,7 +120,7 @@
             margin-bottom: 2rem; 
         }
         .item-card:last-child { margin-bottom: 0; }
-        .item-card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; color: var(--sidebar-color); }
+        .item-card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; color: var(--nav-color); }
         .item-card .timeline { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
         ul { padding-left: 1.2rem; margin: 0.5rem 0 0; color: var(--text-light); }
         li { margin-bottom: 0.4rem; font-size: 0.95rem; }
@@ -160,7 +156,7 @@
             object-fit: contain;
         }
         .edu-details, .exp-details { flex: 1; }
-        .edu-details h3, .exp-details h3 { margin: 0 0 0.2rem 0; font-size: 1.2rem; color: var(--sidebar-color); }
+        .edu-details h3, .exp-details h3 { margin: 0 0 0.2rem 0; font-size: 1.2rem; color: var(--nav-color); }
         .edu-details p, .exp-details p { margin: 0.2rem 0; color: var(--text-dark); font-weight: 500; }
 
         .doc-link {
@@ -175,21 +171,16 @@
         .doc-link:hover { text-decoration: underline; }
 
         @media (max-width: 768px) {
-            body { flex-direction: column; }
-            .sidebar { width: 100%; height: auto; position: relative; padding: 2rem 1.5rem; }
-            .main-content { margin-left: 0; padding: 1.5rem; }
+            .navbar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
             .grid { grid-template-columns: 1fr; }
+            .main-content { margin-top: -1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="sidebar">
-        <div class="profile-area">
-            <img class="profile-avatar" src="profile.jpg" alt="Hiruni Sandamini">
-            <h1>Hiruni Sandamini</h1>
-            <p>B.Sc. (Hons) Statistics Undergraduate<br>University of Sri Jayewardenepura</p>
-        </div>
+    <nav class="navbar">
+        <div class="brand">Hiruni Sandamini</div>
         <ul class="nav-links">
             <li><button class="tab-btn active" data-tab="about">About Me</button></li>
             <li><button class="tab-btn" data-tab="education">Education</button></li>
@@ -199,9 +190,15 @@
             <li><button class="tab-btn" data-tab="certifications">Certifications</button></li>
             <li><button class="tab-btn" data-tab="achievements">Achievements</button></li>
         </ul>
-        <div class="contact-info">
-            <p>📍 Location: Ja-Ela, Sri Lanka</p>
-            <p>✉️ Email: <a href="mailto:herathliyanagehs@gmail.com">herathliyanagehs@gmail.com</a></p>
+    </nav>
+
+    <div class="hero">
+        <img class="profile-avatar" src="profile.jpg" alt="Hiruni Sandamini">
+        <h1>Hiruni Sandamini</h1>
+        <p class="tagline">B.Sc. (Hons) Statistics Undergraduate, University of Sri Jayewardenepura</p>
+        <div class="contact-row">
+            <span>📍 Ja-Ela, Sri Lanka</span>
+            <a href="mailto:herathliyanagehs@gmail.com">✉️ herathliyanagehs@gmail.com</a>
         </div>
     </div>
 

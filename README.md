@@ -5,12 +5,14 @@ I am a final year undergraduate pursuing a **BSc (Hons) in Statistics** at the *
 ---
 
 ### 📊 Areas of Interest
-- **Statistical Modeling** 
+- **Statistical Modeling**
 - **Data Visualization & Analytics**
 - **Predictive Modeling & Time Series**
+- **Spatial Data Analysis**
 
 ### 🎓 Education
-- **BSc (Hons) in Statistics** 
+- **BSc (Hons) in Statistics**
+  *Department of Statistics*
   *Faculty of Applied Sciences, University of Sri Jayewardenepura* (Ongoing)
 
 ---

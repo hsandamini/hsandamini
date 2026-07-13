@@ -26,7 +26,7 @@ Over the course of my degree, I've developed particular strength and interest in
 
 - 📊 [New Zealand Health & Demographics Dashboard](https://hiruniherath.shinyapps.io/Rshiny_app_NewZealand_health_dashboard/) — Interactive R Shiny dashboard analyzing health, epidemiology, and demographic trends.
 - 📈 QA & Performance Dashboard — R Shiny app tracking operational QA metrics with control charts (X-bar and R charts).
-- 🌦️ Mini Project: Applications of Bivariate Distribution & Order Statistics — A literature review summarizing published work on bivariate distributions and order statistics, with focus on rainfall–temperature modeling and extreme weather risk using GEV distributions.
+- 🌦️ Mini Project: Applications of Bivariate Distribution & Order Statistics - A literature review summarizing published work on bivariate distributions and order statistics, with focus on rainfall–temperature modeling and extreme weather risk using GEV distributions.
 - 💹 Analysis of Factors Impacting Export Performance in Sri Lanka — Regression-based analysis of trade data (2007–2024).
 
 *Full details, reports, and live demos are available on my portfolio site linked below.*

@@ -15,10 +15,10 @@ Over the course of my degree, I've developed particular strength and interest in
 
 ### 🛠️ Skills & Tools
 
-- **Languages & Tools:** Python, SQL, R, C, LaTeX
+- **Languages & Tools:** R, Python, SQL, C, LaTeX
 - **R Packages:** tidyverse, forecast, shiny, caret, readr, ggplot2, plotly, flexdashboard
-- **Software:** Minitab, Microsoft Office
-- **Core Areas:** Time Series Analysis & Forecasting, Regression Analysis & GLMs, Multivariate Statistics, Stochastic Processes, Design of Experiments, Probability & Statistical Inference
+- **Software:** Minitab, EViews, Microsoft Office
+- **Core Areas:** Time Series Analysis & Forecasting, Regression Analysis & GLMs, Multivariate Statistics, Stochastic Processes, Design of Experiments, Probability & Statistical Inference, Spatial Data Analysis
 
 ---
 

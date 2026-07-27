@@ -5,7 +5,7 @@
 
 ### 🎓 About Me
 
-I'm **H.L.D. Hiruni Sandamini**, a final-year undergraduate reading for a **BSc (Hons) in Statistics** at the Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka.
+I'm **H.L.D. Hiruni Sandamini**, a final-year undergraduate reading for a **B.Sc. (Hons) in Statistics** at the Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka.
 
 My academic path began with a competitive selection into **Mathematics, Statistics, and Economics** stream, where I spent my first two years building a broad quantitative foundation from differential equations and linear algebra to microeconomics, macroeconomics, and probability theory. This interdisciplinary grounding sharpened both my analytical thinking and my ability to connect statistical methods to real-world economic and mathematical contexts. At the end of my second year, I was selected to specialize fully in the BSc (Hons) in Statistics degree program, a path I've pursued with a strong academic record across a wide range of statistical disciplines.
 
